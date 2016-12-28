@@ -253,8 +253,6 @@ function talk1_4() {
 //クエストクリア①
 function clear1(){
 	
-	
-	
 	var a = data.city.nouhin
 	if( a == 2) {
 		var i1 = document.getElementById("item1");
