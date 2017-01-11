@@ -1,66 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8">
-	
-	<script src="enchant.js"></script>
-	<script src="game.js"></script>
-	
-	
-	<title>RIVIVE</title>
+<title>RIVIVE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="text/javascript" src="enchant.js"></script>
+	<script type="text/javascript" src="novel.enchant.js"></script>
+    <script type="text/javascript" src="main2.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
-
 <body>
-
-<img src="./img/map.png"alt="運子"><img src="./img/waku.png">
-<div style="position: relative;"><br>
-   <div style="position: absolute; top: 50px; left: 70px; width: 335px;">
-      復興度
-   </div>
-
-
-	<div id = "statu">
-		<dl>
-			<dt>復興度</dt><dd id="fukkoudo-label"></dd>
-			<dt>健康度</dt><dd id="kenkoudo-label">
-			<dt>お金</dt><dd id="okane-label"></dd>
-			<dt>アイテム</dt><dd id="items-label"></dd>
-			<dt>春</dt><dd id="spring-label"></dd><br>
-			<dt>現在のイベント</dt><dd id="event-label"></dd>
-		<br><dt>カウント（開発側）</dt><dd id="count-label"></dd> 
-			<dt>基本ルール<br>健康度が0%なる、または、春4週目がすぎるとゲームオーバー</dt>
-		</dl>
-	</div>
-	
-	<div id = "moves">
-		
-		<input type="text" id="use-item-input"><button onclick="use_item()">アイテムを使う</button> <br>
-		<button onclick="end()">ターン終了</button><br><br>
-		<button onclick="experiment()">実験(開発側)</button>
-		<!--<button onclick="get_item()">受け取り（開発側）</button> -->
-	
-	</div>
-	
-	<div id = "quest01">
-	 
-	<br><div id="quest1_1"><button onclick="talk1_1()">村長（話す）</button></div>
-	    <div id="quest1" style="display:none;"><p>クエスト①：資材と人手</p></div>		
-		<div id="quest1_2" style="display:none;"><button onclick="talk1_2()">村人A（話す）</button></div>		
-		<div id="item1" style="display:none;"><p>（<FONT color="red">人手</FONT> × １ 入手）</p></div>		
-		<div id="quest1_3" style="display:none;"><button onclick="talk1_3()">村人B（話す）</button></div>
-		<div id="item2" style="display:none;"><p>（<FONT color="red">資材</FONT> × １ 入手）</p></div><br>
-		<div id="quest1_4" style="display:none;"><button onclick="talk1_4()">村長2（話す）</button></div>
-		<div id="item3" style="display:none;"><p>（<FONT color="red">人手</FONT> と <FONT color="red">資材</FONT> を使ってください）</p></div>
-		<div id="nouhin" style="display:none;"><p>納品数</p></div><div id="nouhin-label" style="display:none;"><p>a</p></div> 
-		<div id="quest1END" style="display:none;"><p><FONT color="red">クエストクリア！！</FONT><br>復興度が<FONT color="green">５</FONT>上がった</FONT></p></div>
-		<div id="quest1close" style="display:none;"><button onclick="quest1_close()">表示を消す</button></div>
-	
-	</div>
-	
-	<div>
-	     <div id="go" style="display:none;"><p><FONT size="7">ゲームオーバー</FONT></p></div>
-	</div>
 </body>
-
 </html>
+
