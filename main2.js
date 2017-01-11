@@ -1,8 +1,21 @@
 ﻿enchant();
 
+var game;
+
+function talk1_1() {
+	// 現在のシーン：
+	// game.currentScene
+	// 例：
+	// var img = new Sprite(146, 58);                   
+	// img.image = game.assets['img/start2.png'];     
+	// img.x = 325;                                      
+	// img.y = 500;
+	// game.currentScene.addChild(img);
+}
+
 window.onload = function() {
 	
-    var game = new Game(800, 640); 
+    game = new Game(800, 640); 
     game.fps = 15;                 
     game.preload("img/start2.png",
 				"img/start1.png",
@@ -145,6 +158,8 @@ window.onload = function() {
 			waku.x = 640;
 			waku.y = 0;
 			scene.addChild(waku);
+			
+			document.getElementById("ui").style.display = "block";
 			
 			//scene.addChild(BGM3);
             //scene.addEventListener(Event.ENTER_FRAME, function(){
